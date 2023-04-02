@@ -9,7 +9,7 @@ class Application(models.Model):
     # услуга
     service = models.CharField(verbose_name="Услуга", max_length=10, help_text="Услуга")
     # бюджет
-    budget = models.CharField(verbose_name="Бюджет", default=False, help_text="Бюджет")
+    budget = models.CharField(verbose_name="Бюджет", max_length=10, default=False, help_text="Бюджет")
     # о проекте
     about_project = models.TextField(verbose_name="О проекте", help_text="Опишите Задачу")
 
